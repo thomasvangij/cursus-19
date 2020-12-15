@@ -6,11 +6,11 @@
 /*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 16:38:30 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/10 17:04:54 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2020/12/15 11:53:31 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 {
 	size_t		i;
 	char		*dest;
