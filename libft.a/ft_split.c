@@ -6,7 +6,7 @@
 /*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/18 15:07:16 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/18 15:47:34 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2020/12/18 17:28:03 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,6 @@ char	**ft_split(const char *s, char c)
 		i++;
 	}
 	res_tab[size] = 0;
+	free(res_tab);
 	return (res_tab);
 }
