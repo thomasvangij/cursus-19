@@ -6,15 +6,15 @@
 /*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 15:07:01 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/15 15:21:58 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/17 12:25:00 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, unsigned int len)
 {
-	size_t	i;
-	size_t	j;
-	char	*ans;
+	unsigned int	i;
+	unsigned int	j;
+	char			*ans;
 
 	i = 0;
 	ans = (char *)haystack;
