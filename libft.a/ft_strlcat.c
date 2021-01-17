@@ -6,13 +6,13 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:01 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:42:47 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/17 14:55:17 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlen(const char *s);
 
-unsigned int	ft_strlcat(char *restrict dst, //
+unsigned int	ft_strlcat(char *restrict dst, \
 		const char *restrict src, unsigned int dstsize)
 {
 	unsigned int	i;
