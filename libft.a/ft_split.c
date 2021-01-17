@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/18 15:07:16 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/18 17:28:03 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:20:23 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:38:17 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int		word_len(const char *s, char c, int j)
 	return (w_len);
 }
 
-char	*ft_strdup(const char *s, char c, int j)
+char	*ft_strdupp(const char *s, char c, int j)
 {
 	char	*w_str;
 	int		i;
@@ -82,7 +82,7 @@ char	**ft_split(const char *s, char c)
 	{
 		while (is_sep(s[j], c))
 			j++;
-		res_tab[i] = ft_strdup(s, c, j);
+		res_tab[i] = ft_strdupp(s, c, j);
 		j += word_len(s, c, j);
 		i++;
 	}

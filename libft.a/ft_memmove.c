@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/10 14:51:42 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/10 15:13:02 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:16:15 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:16:34 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, unsigned int len)
 {
 	char		*dest;
 	const char	*source;

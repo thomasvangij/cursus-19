@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/15 14:49:02 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/15 15:00:48 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:24:22 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:24:27 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ char	*ft_strrchr(const char *s, int c)
 	while (strs[i] != occurs)
 		if (strs[--i] == occurs)
 			return (strs + i);
-	return (NULL);
+	return (0);
 }

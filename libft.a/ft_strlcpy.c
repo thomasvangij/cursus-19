@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/10 16:38:30 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/15 11:53:31 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:22:17 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:40:46 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+unsigned int	ft_strlcpy(char *restrict dst, //
+		const char *restrict src, unsigned int dstsize)
 {
-	size_t		i;
-	char		*dest;
-	const char	*source;
+	unsigned int	i;
+	char			*dest;
+	const char		*source;
 
 	i = 0;
 	dest = dst;

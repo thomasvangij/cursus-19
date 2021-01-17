@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/17 17:16:35 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/17 17:25:29 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:21:22 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:21:29 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strdup(const char *s1)
 {
 	int		i;
-	char	str;
+	char	*str;
 
 	i = 0;
 	while (s1[i])

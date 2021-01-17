@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/06 14:54:34 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/06 15:13:45 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:11:11 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:11:25 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, unsigned int n)
 {
 	char *str;
 

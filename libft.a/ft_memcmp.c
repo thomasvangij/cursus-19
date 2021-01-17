@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/10 16:00:09 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/10 16:17:08 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:15:15 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:15:28 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, unsigned int n)
 {
 	unsigned char	*str1;
 	unsigned char	*str2;

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/06 16:58:47 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/06 17:46:23 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:14:16 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:14:31 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memccpy(void *restrict dst, \\
-		const void *restrict src, int c, size_t n)
+void	*ft_memccpy(void *restrict dst, //
+		const void *restrict src, int c, unsigned int n)
 {
 	unsigned char	occurs;
 	char			*dest;
 	const char		*source;
-	size_t			i;
+	unsigned int	i;
 
 	occurs = c;
 	dest = dst;

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+         #
+#    By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/12/30 14:18:45 by tvan-gij          #+#    #+#              #
-#    Updated: 2020/12/30 14:49:02 by tvan-gij         ###   ########.fr        #
+#    Created: 2021/01/17 13:58:57 by tvan-gij          #+#    #+#              #
+#    Updated: 2021/01/17 14:28:32 by tvan-gij         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,17 +45,17 @@ SRCS = ft_atoi.c \
 	   ft_strtrim.c \
 	   ft_substr.c \
 	   ft_tolower.c \
-	   ft_toupper.c
+	   ft_toupper.c \
 
-OBJS = $(addprefix srcs/, ${SRCS:.c=.o})
+OBJS = ${SRCS:.c=.o}
 
-.c.o:
-	gcc -Wall -Wextra -Werror -c -I./includes $< -o ${<:.c=.o}
+all: ${NAME}
 
 ${NAME}: ${OBJS}
 	ar -rcs $@ $^
 
-all: ${NAME}
+.c.o:
+	gcc -Wall -Wextra -Werror -c $< -o ${<:.c=.o}
 
 clean:
 	rm -f ${OBJS}

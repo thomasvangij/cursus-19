@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/10 16:20:45 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/10 16:29:17 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:22:38 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:22:51 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(const char *s)
+unsigned int	ft_strlen(const char *s)
 {
-	size_t i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i] != '\0')

@@ -3,28 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/15 11:50:52 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/15 14:08:33 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:22:01 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:42:47 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
+unsigned int	ft_strlen(const char *s);
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
-
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+unsigned int	ft_strlcat(char *restrict dst, //
+		const char *restrict src, unsigned int dstsize)
 {
-	size_t	i;
-	size_t	j;
-	size_t	lendst;
+	unsigned int	i;
+	unsigned int	j;
+	unsigned int	lendst;
 
 	i = 0;
 	j = ft_strlen(src);

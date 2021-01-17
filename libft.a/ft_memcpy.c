@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/06 15:21:04 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/06 17:48:44 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:15:44 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:16:02 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, unsigned int n)
 {
 	char		*dest;
 	const char	*source;

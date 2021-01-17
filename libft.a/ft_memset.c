@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/06 14:09:14 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/06 14:43:45 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:16:46 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:17:12 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, unsigned int len)
 {
 	char	*str;
 

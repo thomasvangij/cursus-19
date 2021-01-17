@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tvan-gij </var/mail/tvan-gij>              +#+  +:+       +#+        */
+/*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/10 15:22:22 by tvan-gij          #+#    #+#             */
-/*   Updated: 2020/12/10 15:53:09 by tvan-gij         ###   ########.fr       */
+/*   Created: 2021/01/17 13:14:50 by tvan-gij          #+#    #+#             */
+/*   Updated: 2021/01/17 13:15:03 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, unsigned int n)
 {
 	unsigned char	occurs;
 	unsigned char	*str;
-	size_t			i;
+	unsigned int	i;
 
 	occurs = c;
 	str = (unsigned char *)s;
