@@ -6,13 +6,16 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:18:39 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:36:37 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/17 17:09:48 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar_fd(char c, int fd);
+void	ft_putchaar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -20,7 +23,7 @@ void	ft_putnbr_fd(int n, int fd)
 
 	if (n < 0)
 	{
-		ft_putchar_fd('-', fd);
+		ft_putchaar_fd('-', fd);
 		i = -n;
 	}
 	else
@@ -30,5 +33,5 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(i / 10, fd);
 		i %= 10;
 	}
-	ft_putchar_fd(i + '0', fd);
+	ft_putchaar_fd(i + '0', fd);
 }
