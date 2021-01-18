@@ -6,12 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:14:16 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 14:56:35 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/18 18:41:49 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memccpy(void *restrict dst, \
-		const void *restrict src, int c, unsigned int n)
+void	*ft_memccpy(void *dst, const void *src, int c, unsigned int n)
 {
 	unsigned char	occurs;
 	char			*dest;

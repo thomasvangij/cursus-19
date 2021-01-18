@@ -6,12 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:17 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 14:56:58 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/18 18:43:06 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *restrict dst, \
-		const char *restrict src, unsigned int dstsize)
+unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int dstsize)
 {
 	unsigned int	i;
 	char			*dest;

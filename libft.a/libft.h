@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:44:05 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 14:56:14 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/18 18:45:24 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,21 +36,17 @@ char			*ft_strtrim(const char *s1, const char *set);
 char			*ft_substr(const char *s, unsigned int start, unsigned int len);
 void			ft_bzero(void *s, unsigned int n);
 void			*ft_calloc(unsigned int count, unsigned int size);
-void			*ft_memccpy(void *restrict dst, \
-		const void *restrict src, int c, unsigned int n);
+void			*ft_memccpy(void *dst, const void *src, int c, unsigned int n);
 void			*ft_memchr(const void *s, int c, unsigned int n);
-void			*ft_memcpy(void *restrict dst, \
-		const void *restrict src, unsigned int n);
+void			*ft_memcpy(void *dst, const void *src, unsigned int n);
 void			*ft_memmove(void *dst, const void *src, unsigned int len);
 void			*ft_memset(void *b, int c, unsigned int len);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-unsigned int	ft_strlcat(char *restrict dst, \
-		const char *restrict src, unsigned int dstsize);
-unsigned int	ft_strlcpy(char *restrict dst, \
-		const char *restrict src, unsigned int dstsize);
+unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize);
+unsigned int	ft_strlcpy(char *dst, const char *src, unsigned int dstsize);
 unsigned int	ft_strlen(const char *s);
 
 #endif

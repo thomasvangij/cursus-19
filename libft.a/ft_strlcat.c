@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:01 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 17:07:57 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/18 18:42:40 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ unsigned int	ft_strlenc(const char *s)
 	return (i);
 }
 
-unsigned int	ft_strlcat(char *restrict dst, \
-		const char *restrict src, unsigned int dstsize)
+unsigned int	ft_strlcat(char *dst, const char *src, unsigned int dstsize)
 {
 	unsigned int	i;
 	unsigned int	j;
