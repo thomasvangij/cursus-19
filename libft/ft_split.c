@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:20:23 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:38:17 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/22 18:26:52 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,30 +40,29 @@ int		word_nbr(const char *s, char c)
 	return (word_nbr);
 }
 
-int		word_len(const char *s, char c, int j)
-{
-	int	w_len;
-
-	w_len = 0;
-	while (!(is_sep(s[j + w_len], c)))
-		w_len++;
-	return (w_len);
-}
-
 char	*ft_strdupp(const char *s, char c, int j)
 {
 	char	*w_str;
 	int		i;
-	int		size;
+	int		w_len;
 
+	w_len = 0;
+	while (!(is_sep(s[j + w_len], c)))
+		w_len++;
 	i = -1;
-	size = word_len(s, c, j);
-	if (!(w_str = (char *)malloc(size + 1)))
+	if (!(w_str = (char *)malloc(w_len + 1)))
 		return (NULL);
-	while (++i < size)
+	while (++i < w_len)
 		w_str[i] = s[j + i];
 	w_str[i] = '\0';
 	return (w_str);
+}
+
+void	split_error(char **res_tab, int i)
+{
+	while (--i > -1)
+		free(res_tab[i]);
+	free(res_tab);
 }
 
 char	**ft_split(const char *s, char c)
@@ -76,17 +75,20 @@ char	**ft_split(const char *s, char c)
 	size = word_nbr(s, c);
 	if (!(res_tab = (char **)malloc(sizeof(char *) * (size + 1))))
 		return (NULL);
-	i = 0;
+	i = -1;
 	j = 0;
-	while (i < size)
+	while (++i < size)
 	{
 		while (is_sep(s[j], c))
 			j++;
-		res_tab[i] = ft_strdupp(s, c, j);
-		j += word_len(s, c, j);
-		i++;
+		if (!(res_tab[i] = ft_strdupp(s, c, j)))
+		{
+			split_error(res_tab, i);
+			return (NULL);
+		}
+		while (!(is_sep(s[j], c)))
+			j++;
 	}
 	res_tab[size] = 0;
-	free(res_tab);
 	return (res_tab);
 }
