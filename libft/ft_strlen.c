@@ -6,13 +6,15 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:38 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:22:51 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/22 16:11:51 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlen(const char *s)
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *s)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')

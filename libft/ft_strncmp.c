@@ -6,15 +6,17 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:23:31 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:23:38 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/22 16:22:47 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strncmp(const char *s1, const char *s2, unsigned int n)
+#include <stdlib.h>
+
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	char			*str1;
-	char			*str2;
-	unsigned int	i;
+	char	*str1;
+	char	*str2;
+	size_t	i;
 
 	str1 = (char *)s1;
 	str2 = (char *)s2;

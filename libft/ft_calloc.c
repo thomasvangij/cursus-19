@@ -6,13 +6,13 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:11:34 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:12:05 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/01/22 16:24:58 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_calloc(unsigned int count, unsigned int size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*mem;
 
