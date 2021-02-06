@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:14:16 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/22 16:06:20 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/02/06 16:20:56 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,18 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	unsigned char	occurs;
-	char			*dest;
-	const char		*source;
 	size_t			i;
 
-	occurs = c;
-	dest = dst;
-	source = src;
 	i = 0;
-	while (i < n && source[i] != occurs)
+	while (i < n && ((unsigned char *)src)[i] != (unsigned char)c)
 	{
-		dest[i] = source[i];
+		((char *)dst)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
-	if (source[i] == occurs)
-		return (dst + i + 1);
+	if (((unsigned char *)src)[i] == (unsigned char)c)
+	{
+		((char *)dst)[i] = ((unsigned char *)src)[i];
+		return (&((char *)dst)[i + 1]);
+	}
 	return (0);
 }
