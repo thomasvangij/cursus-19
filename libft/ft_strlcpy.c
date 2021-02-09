@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:17 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/22 16:13:53 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/02/09 18:50:05 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	dest = dst;
 	source = src;
+	while (dstsize == 0 && source[i])
+	{
+		i++;
+		if (!source[i])
+			return (i);
+	}
 	while (--dstsize && source[i])
 	{
-		dest[i] = source[i];
+		dest[i] = (source[i]);
 		i++;
 	}
 	dest[i] = '\0';
