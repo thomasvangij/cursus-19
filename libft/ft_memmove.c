@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:16:15 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/02/06 17:45:47 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/02/09 17:27:54 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	while (len-- > 0)
 	{
 		if (!dest && !source)
-			break;
+			break ;
 		dest[len] = source[len];
 	}
 	return (dst);
