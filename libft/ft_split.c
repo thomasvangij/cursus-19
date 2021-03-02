@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:20:23 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/03/02 19:52:31 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/02 20:18:29 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,8 @@ char	**ft_split(const char *s, char c)
 	int		j;
 	int		size;
 
-	if (!s || !(res_tab = (char **)malloc(sizeof(char *) * ((word_nbr(s, c)) + 1))))
+	if (!s || !(res_tab = \
+				(char **)malloc(sizeof(char *) * (word_nbr(s, c) + 1))))
 		return (NULL);
 	size = word_nbr(s, c);
 	i = -1;

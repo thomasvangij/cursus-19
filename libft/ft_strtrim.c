@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:24:57 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/03/02 19:46:58 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/02 20:11:18 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,10 +77,9 @@ char	*ft_strtrim(const char *s1, const char *set)
 	if (!(str_t = (char *)malloc(count + 1)))
 		return (NULL);
 	k = 0;
-	while (s1[i] && k < count)
+	while (s1[i + k] && k < count)
 	{
-		str_t[k] = (char)(s1[i]);
-		i++;
+		str_t[k] = (char)(s1[i + k]);
 		k++;
 	}
 	str_t[k] = '\0';
