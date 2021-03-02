@@ -6,12 +6,12 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:01 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/02/09 20:12:18 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/02 18:57:51 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-
+/*
 size_t	ft_strlenc(const char *s)
 {
 	size_t	i;
@@ -21,7 +21,7 @@ size_t	ft_strlenc(const char *s)
 		i++;
 	return (i);
 }
-
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -29,18 +29,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	lendst;
 
 	i = 0;
-	j = ft_strlenc(src);
-	lendst = ft_strlenc(dst);
-	if (lendst > dstsize)
-		return (j + lendst - 1);
-	if (dstsize > 0 && dstsize - lendst - 1 > 0)
-		while (dstsize - lendst - 1 > i && i < j)
-		{
-			dst[lendst + i] = src[i];
-			i++;
-		}
-	dst[lendst + i] = '\0';
-	if (lendst + j < dstsize)
-		return (lendst + j);
-	return (dstsize);
+	j = 0;
+	lendst = 0;
+	while (dst[lendst] != '\0' && lendst < dstsize)
+		lendst++;
+	while (src[j])
+		j++;
+	i = j + lendst;
+	if (lendst == dstsize)
+		return (i);
+	j = 0;
+	while (src[j] && lendst + j < dstsize - 1)
+	{
+			dst[lendst + j] = src[j];
+			j++;
+	}
+	dst[lendst + j] = '\0';
+	return (i);
 }

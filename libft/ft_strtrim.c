@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:24:57 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/02/11 15:54:08 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/02 19:46:58 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	int		k;
 	char	*str_t;
 
+	if (!s1 || !set)
+		return (NULL);
 	k = ft_last_count(s1, set);
 	i = ft_first_count(s1, set);
 	count = 0;

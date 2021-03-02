@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:21:22 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:21:29 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/02 19:22:53 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 char	*ft_strdup(const char *s1)
 {
 	int		i;
+	int		j;
 	char	*str;
 
 	i = 0;
@@ -22,12 +23,12 @@ char	*ft_strdup(const char *s1)
 		i++;
 	if (!(str = (char *)malloc(sizeof(char) * (i + 1))))
 		return (NULL);
-	i = 0;
-	while (str[i])
+	j = 0;
+	while (j < i)
 	{
-		str[i] = s1[i];
-		i++;
+		str[j] = s1[j];
+		j++;
 	}
-	str[i] = '\0';
+	str[j] = '\0';
 	return (str);
 }
