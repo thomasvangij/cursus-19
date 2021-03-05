@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:15:15 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/02/06 17:57:04 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:24:43 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

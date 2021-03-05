@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:22:38 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/22 16:11:51 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:30:24 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

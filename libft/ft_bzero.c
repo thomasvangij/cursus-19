@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:11:11 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/22 16:02:45 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:20:21 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

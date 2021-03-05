@@ -6,9 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:10:47 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:10:59 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:19:53 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

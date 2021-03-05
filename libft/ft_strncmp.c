@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:23:31 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/02/09 18:03:45 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:31:02 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

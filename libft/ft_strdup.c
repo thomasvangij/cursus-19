@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:21:22 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/03/02 19:22:53 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:29:19 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

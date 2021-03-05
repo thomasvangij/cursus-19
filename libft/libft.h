@@ -6,12 +6,14 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:44:05 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/22 16:28:13 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:35:09 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdlib.h>
+# include <unistd.h>
 
 int			ft_atoi(const char *str);
 int			ft_isalnum(int c);

@@ -6,9 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:24:22 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/02/09 17:23:04 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:31:46 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

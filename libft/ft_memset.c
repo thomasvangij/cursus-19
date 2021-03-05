@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:16:46 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/22 16:01:16 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:25:41 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

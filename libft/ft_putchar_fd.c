@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:17:23 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/01/17 13:17:32 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:26:09 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

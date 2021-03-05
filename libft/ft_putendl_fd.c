@@ -6,11 +6,11 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:17:41 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/03/02 19:56:20 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:26:25 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 unsigned int	ft_strlenb(const char *s)
 {
