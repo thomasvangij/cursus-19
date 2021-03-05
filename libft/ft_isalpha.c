@@ -6,7 +6,7 @@
 /*   By: tvan-gij <tvan-gij@student.19.be>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/17 13:12:37 by tvan-gij          #+#    #+#             */
-/*   Updated: 2021/03/05 13:22:37 by tvan-gij         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:47:30 by tvan-gij         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_isalpha(int c)
 {
-	unsigned char	d;
-
-	d = (unsigned char)c;
-	if ((d > 64 && d < 91) || (d > 96 && d < 123))
+	if ((c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
 	return (0);
 }
